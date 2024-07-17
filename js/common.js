@@ -639,7 +639,7 @@
 			// console.log('while inner')
 		}
 		await serialPort.close()
-		// console.log(serialOpen , serialPort.readable)
+		console.log(serialOpen , serialPort.readable)
 	}
 
 	//串口分包合并
