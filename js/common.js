@@ -636,10 +636,10 @@
 			} finally {
 				reader.releaseLock()
 			}
-			console.log('while inner')
+			// console.log('while inner')
 		}
 		await serialPort.close()
-		console.log(serialOpen , serialPort.readable)
+		// console.log(serialOpen , serialPort.readable)
 	}
 
 	//串口分包合并
@@ -656,7 +656,7 @@
 			//超时发出
 			addLog(serialData, true)
 			serialData = []
-			console.log('received timeout')
+			// console.log('received timeout')
 		}, toolOptions.timeOut)
 	}
 
